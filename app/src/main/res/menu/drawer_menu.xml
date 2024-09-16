@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<group android:checkableBehavior="single">
+    <item android:title="Home" android:icon="@drawable/icons8_home"/>
+    <item android:title="Messages" android:icon="@drawable/mic"/>
+    <item android:title="New" android:icon="@drawable/icons8_edit"/>
+</group>
+    <item android:title="Profile" android:icon="@drawable/profile">
+    <menu >
+        <group>
+            <item android:title="log in" android:icon="@drawable/profile"/>
+            <item android:title="Setting" android:icon="@drawable/settings"/>
+        </group>
+    </menu>
+    </item>
+    <item android:title="Share" android:icon="@drawable/checkmark">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item android:title="Share" android:icon="@drawable/add"/>
+            <item android:title="Abut Us" android:icon="@drawable/icons8_logo"/>
+            </group>
+
+        </menu>
+
+
+    </item>
+
+</menu>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context=".activities.CheckboxActivity">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+    <CheckBox
+        android:id="@+id/parentCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHeck box"
+        android:textColor="@color/white"/>
+     <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHeck box"
+         android:checked="true"
+        android:textColor="@color/white"/>
+     <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHeck box"
+        android:textColor="@color/white"/>
+   </LinearLayout>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parent Check Box"
+        app:checkedState="indeterminate"
+        android:textColor="@color/white"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child Check Box 1"
+            android:textColor="@color/white"
+            android:buttonTint="#FF0033"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child Check Box2"
+            android:textColor="@color/white"
+            app:buttonTint="#FF0000"
+            style="@style/Widget.AppCompat.CompoundButton.CheckBox"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child Check Box 3"
+            android:textColor="@color/white"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:buttonIconTint="#FF0000"
+            android:text="Child Check Box 4"
+            android:textColor="@color/white"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

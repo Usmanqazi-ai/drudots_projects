@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_color"
+
+    tools:context=".activities.ButtonsActivity">
+ <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+        android:text="Elevated Button"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+        app:icon="@drawable/add"
+        android:text="Elevated Button with icon"
+        android:layout_marginBottom="5dp"/>
+ </LinearLayout>
+ <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filled Button"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/add"
+        android:layout_marginStart="5dp"
+        android:text="Filled Button with Icon"
+        android:layout_marginBottom="5dp"/>
+ </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:text="Tonal Button"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+        android:text="Filled Tonal Button"/>
+ </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        style="@style/Widget.Material3.Button.TonalButton.Icon"
+        android:text="Tonal Button with icon"
+        app:icon="@drawable/add"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+     <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:text="Out lined Button"/>
+     <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:text="Out lined Button with  icon"
+        android:maxLines="1"
+        app:icon="@drawable/add"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+     <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Text Button"
+         android:textAlignment="textStart"
+        style="@style/Widget.Material3.Button.TextButton"/>
+     <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:text="Text Button with icon"
+        app:icon="@drawable/add"/>
+    </LinearLayout>
+     <com.google.android.material.button.MaterialButtonToggleGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:text="Button1"
+            android:layout_marginRight="12dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:text="Button1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:text="Button1"/>
+     </com.google.android.material.button.MaterialButtonToggleGroup>
+     <com.google.android.material.button.MaterialButtonToggleGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.Button.IconButton.Outlined"
+            app:icon="@drawable/add"
+
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.Button.IconButton.Outlined"
+            app:icon="@drawable/profile"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/settings"
+            style="@style/Widget.Material3.Button.IconButton.Outlined"
+            />
+     </com.google.android.material.button.MaterialButtonToggleGroup>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/add"/>
+
+     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Extended FAB"
+        app:icon="@drawable/add"/>
+    </LinearLayout>
+
+
+</LinearLayout>

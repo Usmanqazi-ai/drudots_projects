@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_color"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".activities.DividerActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text 1"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text 2"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dividerInsetStart="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text 3"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dividerInsetEnd="25dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text 4"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dividerInsetEnd="60dp"
+        app:dividerInsetStart="60dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text 5"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dividerInsetEnd="60dp"
+        android:foregroundTint="@color/black"
+        app:dividerThickness="5dp"
+        app:dividerColor="@color/black"
+        app:dividerInsetStart="60dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text 6"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dividerInsetEnd="60dp"
+        android:foregroundTint="@color/black"
+        app:dividerThickness="5dp"
+        app:dividerColor="@color/barcolor"
+        app:dividerInsetStart="60dp"/>
+</LinearLayout>

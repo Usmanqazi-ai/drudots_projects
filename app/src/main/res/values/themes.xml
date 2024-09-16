@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.M3matrial_app" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.M3matrial_app" parent="Base.Theme.M3matrial_app" >
+
+        <item name="materialCalendarTheme">@style/ThemeOverlay.App.DatePicker</item>
+
+        </style>
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerSize">16dp</item>
+    </style>
+
+
+    <style name="ThemeOverlay.App.DatePicker" parent="@style/ThemeOverlay.Material3.MaterialCalendar">
+    <item name="colorPrimary">@color/barcolor</item>
+    <item name="colorOnPrimary">@color/main_color</item>
+    <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+    <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent</item>
+</style>
+    <style name="ThemeOverlay.App.Switch" parent="">
+        <item name="colorPrimary">#D584A0</item>
+        <item name="colorSurfaceVariant">#CD1755</item>
+    </style>
+
+    <style name="Widget.App.Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Switch</item>
+    </style>
+</resources>

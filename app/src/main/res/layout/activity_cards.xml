@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:orientation="horizontal"
+    android:gravity="center"
+    tools:context=".activities.CardsActivity">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card1"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        app:cardBackgroundColor="@color/barcolor"
+        android:layout_margin="3dp"
+
+        app:cardCornerRadius="10dp"
+        style="@style/Widget.MaterialComponents.CardView"
+        android:clickable="true"
+        android:focusable="true"
+        android:checkable="true"
+        app:cardElevation="10dp">
+
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/icons8_logo"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/main_color"
+                tools:ignore="ContentDescription" />
+
+
+
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingStart="15dp"
+                android:paddingBottom="2dp"
+                android:gravity="bottom"
+                android:paddingTop="25dp"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:text="Card View Check Able"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card2"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        app:cardBackgroundColor="@color/barcolor"
+        android:layout_margin="3dp"
+        app:cardCornerRadius="10dp"
+        style="@style/Widget.Material3.CardView.Outlined"
+        android:clickable="true"
+        android:focusable="true"
+        android:checkable="true"
+        app:state_dragged="true"
+        app:cardElevation="10dp">
+
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/icons8_logo"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/main_color"
+                tools:ignore="ContentDescription" />
+
+
+
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingStart="15dp"
+                android:paddingBottom="2dp"
+                android:gravity="bottom"
+                android:paddingTop="25dp"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:text="Card View Out lined style"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

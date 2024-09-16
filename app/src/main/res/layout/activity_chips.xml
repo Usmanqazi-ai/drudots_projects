@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_color"
+    android:gravity="center"
+    tools:context=".activities.ChipsActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <com.google.android.material.chip.Chip
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chip 1"
+        android:layout_margin="5dp"/>
+    <com.google.android.material.chip.Chip
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chip 1"
+
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_margin="5dp"/>
+    </LinearLayout>
+
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chip E1"
+
+            android:checkable="true"
+            app:checkedIcon="@drawable/checkmark"
+            app:checkedIconEnabled="true"
+            android:layout_margin="5dp"/>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chip E2"
+            app:checkedIcon="@drawable/checkmark"
+            app:checkedIconEnabled="true"
+            android:checkable="true"
+            android:layout_margin="5dp"/>
+        <com.google.android.material.chip.Chip
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chip E3"
+            android:checkable="true"
+            app:checkedIcon="@drawable/checkmark"
+            app:checkedIconEnabled="true"
+        android:layout_margin="5dp"/>
+        <com.google.android.material.chip.Chip
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chip E4"
+            android:checkable="true"
+            app:checkedIcon="@drawable/checkmark"
+            app:checkedIconEnabled="true"
+        android:layout_margin="5dp"/>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chip E5"
+            android:checkable="true"
+            app:checkedIcon="@drawable/checkmark"
+            app:checkedIconEnabled="true"
+            android:layout_margin="5dp"/>
+
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/barcolor"
+            android:checkable="true">
+
+
+
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chip E1"
+                android:checkable="true"
+                app:checkedIcon="@drawable/checkmark"
+                app:checkedIconEnabled="true"
+                android:layout_margin="5dp"/>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chip E2"
+                android:checkable="true"
+                app:checkedIcon="@drawable/checkmark"
+                app:checkedIconEnabled="true"
+                android:layout_margin="5dp"/>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chip E3"
+                android:checkable="true"
+                app:checkedIcon="@drawable/checkmark"
+                app:checkedIconEnabled="true"
+                android:layout_margin="5dp"/>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chip E4"
+                android:checkable="true"
+                android:layout_margin="5dp"/>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chip E5"
+                android:checkable="true"
+                app:checkedIcon="@drawable/checkmark"
+                app:checkedIconEnabled="true"
+                android:layout_margin="5dp"/>
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chip E5"
+                android:checkable="true"
+                app:checkedIcon="@drawable/checkmark"
+                app:checkedIconEnabled="true"
+                android:layout_margin="5dp"/>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chip E5"
+                android:checkable="true"
+                app:checkedIcon="@drawable/checkmark"
+                app:checkedIconEnabled="true"
+                android:layout_margin="5dp"/>
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+
+
+    </HorizontalScrollView>
+
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter Chip"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:checkable="true"
+            android:checked="true"
+            app:checkedIcon="@drawable/checkmark"
+            app:checkedIconEnabled="true"
+            android:layout_margin="5dp"/>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chip E2"
+            style="@style/Widget.Material3.Chip.Filter.Elevated"
+
+            app:checkedIcon="@drawable/checkmark"
+            app:checkedIconEnabled="true"
+            android:checkable="true"
+            android:layout_margin="5dp"/>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.Chip.Input"
+            android:text="Input Chip"
+            android:checkable="true"
+            app:checkedIcon="@drawable/checkmark"
+            app:checkedIconTint="@color/main_color"
+            app:checkedIconEnabled="true"
+            android:layout_margin="5dp"/>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chip E4"
+            android:checkable="true"
+            app:checkedIcon="@drawable/checkmark"
+            app:checkedIconEnabled="true"
+            android:layout_margin="5dp"/>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chip E5"
+            android:checkable="true"
+            app:checkedIcon="@drawable/checkmark"
+            app:checkedIconEnabled="true"
+            android:layout_margin="5dp"/>
+
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+</LinearLayout>

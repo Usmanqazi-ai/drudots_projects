@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">M3matrial_app</string>
+    <string name="some_text">Some Text</string>
+    <string name="matrial_3">Matrial 3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alert_title">Title</string>
+    <string name="start_massage">Start The App</string>
+    <string name="decline">No</string>
+    <string name="accept">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string-array name="programming_languages">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Python</item>
+        <item>CPP</item>
+    </string-array>
+</resources>

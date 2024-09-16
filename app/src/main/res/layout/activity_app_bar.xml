@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AppBarActivity"
+    android:background="@color/main_color"
+    android:gravity="center">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mytoolbar"
+            android:background="#08464E"
+            app:menu="@menu/toolbar_menu">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_horizontal_3"
+                android:layout_marginEnd="5sp"
+                android:layout_gravity="start"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M3matrial app"
+                android:textSize="17sp"
+
+
+                android:textColor="@color/white"
+                android:layout_marginStart="25dp"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+
+
+
+</LinearLayout>

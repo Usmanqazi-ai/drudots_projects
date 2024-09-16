@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context=".activities.SwitchActivity">
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/materialSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:textColor="@color/white"
+        android:text="Switch 4"
+        app:trackDecoration="@color/black"
+        app:trackTint="#4C1729"
+        app:layout_constraintStart_toStartOf="@+id/materialSwitch2"
+        app:layout_constraintTop_toBottomOf="@+id/materialSwitch2" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/materialSwitch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"
+        style="@style/Widget.App.Switch"
+        app:thumbTint="@color/white"
+        android:text="Switch 3"
+        app:layout_constraintStart_toStartOf="@+id/materialSwitch3"
+        app:layout_constraintTop_toBottomOf="@+id/materialSwitch3" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/materialSwitch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:textColor="@color/white"
+        android:text="Switch 2"
+        app:layout_constraintStart_toStartOf="@+id/materialSwitch4"
+        app:layout_constraintTop_toBottomOf="@+id/materialSwitch4" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/materialSwitch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="149dp"
+        android:textColor="@color/white"
+        android:text="Switch 1"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
