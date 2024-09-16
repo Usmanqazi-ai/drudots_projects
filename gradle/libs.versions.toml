@@ -1,0 +1,64 @@
+[versions]
+agp = "8.4.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.0"
+constraintlayout = "2.1.4"
+ccp = "2.7.3"
+gson = "2.11.0"
+glide = "5.0.0-rc01"
+compiler = "5.0.0-rc01"
+viewpagerdotsindicator = "3.0.3"
+circleindicator = "2.1.6"
+circleimageview = "3.1.0"
+materialSpinner = "1.3.1"
+coreKtx = "1.15.0-alpha01"
+roundedimageview = "2.3.0"
+comGoogleGmsGoogleServicesGradlePlugin = "4.4.2"
+firebaseBom = "33.1.2"
+firebaseAnalytics = "22.0.2"
+retrofit = "2.11.0"
+converterGson = "2.11.0"
+loggingInterceptor = "5.0.0-alpha.14"
+firebaseMessagingKtx = "24.0.0"
+googleGmsGoogleServices = "4.4.2"
+firebaseInappmessagingDisplay = "21.0.0"
+firebaseAuth = "23.0.0"
+firebaseFirestore = "25.0.0"
+
+[libraries]
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+ccp = { group = "com.hbb20", name = "ccp", version.ref = "ccp" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "compiler" }
+viewpagerdotsindicator = { group = "com.tbuonomo.andrui", name = "viewpagerdotsindicator", version.ref = "viewpagerdotsindicator" }
+circleindicator = { group = "me.relex", name = "circleindicator", version.ref = "circleindicator" }
+circleimageview = { group = "de.hdodenhof", name = "circleimageview", version.ref = "circleimageview" }
+material-spinner = { group = "com.jaredrummler", name = "material-spinner", version.ref = "materialSpinner" }
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+roundedimageview = { group = "com.makeramen", name = "roundedimageview", version.ref = "roundedimageview" }
+com-google-gms-google-services-gradle-plugin = { group = "com.google.gms.google-services", name = "com.google.gms.google-services.gradle.plugin", version.ref = "comGoogleGmsGoogleServicesGradlePlugin" }
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics", version.ref = "firebaseAnalytics" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "converterGson" }
+logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "loggingInterceptor" }
+firebase-messaging-ktx = { group = "com.google.firebase", name = "firebase-messaging-ktx", version.ref = "firebaseMessagingKtx" }
+firebase-inappmessaging-display = { group = "com.google.firebase", name = "firebase-inappmessaging-display", version.ref = "firebaseInappmessagingDisplay" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+

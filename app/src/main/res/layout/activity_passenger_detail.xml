@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PassengerDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="212dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/mainColor">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/map_img" />
+
+
+        <ImageView
+            android:id="@+id/backBtnPassengerDetail"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_above="@id/textMainPassenger"
+            android:layout_marginBottom="27dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/bg_back_button"
+            android:padding="5dp"
+            android:src="@drawable/path_back_white" />
+
+        <TextView
+            android:id="@+id/textPassengerDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textMainPassenger"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="27dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Passenger Details"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textMainPassenger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Main Passenger"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textMainPassenger"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="These details will be used to verify your identity at the bus station."
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtForSnack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="38dp"
+             />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout2"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Full Name"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:elevation="50dp"
+            app:boxStrokeColor="#15000000"
+            app:boxStrokeWidthFocused="1dp"
+            app:cursorColor="#B3000000"
+            app:hintEnabled="false"
+            app:startIconDrawable="@drawable/person">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passengerDetailName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hint="Your Name"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="12sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Phone Number"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:elevation="50dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/num_field_bg">
+
+
+            <LinearLayout
+                android:id="@+id/pakFlag"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/num_field_bg"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/getFlag"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="🇵🇰" />
+
+                <TextView
+                    android:id="@+id/getCountryCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="+92"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/passengerDetailPhoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="XXX XXXX XXX"
+                android:inputType="phone"
+                android:paddingStart="10dp"
+                android:textSize="12sp"
+                app:cursorColor="#B3000000" />
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/passengerDetailButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Next"
+            android:textAppearance="@style/ShapeAppearance.Material3.Corner.Small"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

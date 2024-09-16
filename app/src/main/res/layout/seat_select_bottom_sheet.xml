@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="13dp"
+    android:background="@color/transparent"
+   >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/seat_bus_stracture"
+        >
+
+        <View
+            android:id="@+id/viewCenter"
+            android:layout_width="93dp"
+            android:layout_height="3dp"
+            android:background="#BCBCBC"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/llTxtSeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewCenter"
+            android:layout_marginTop="20dp"
+            android:paddingTop="20dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select seat type"
+                android:textSize="16dp"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                />
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seat_bus_stracture"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="30dp"
+                android:padding="8dp">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seat no " />
+
+                <TextView
+                    android:id="@+id/txtSeatNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/llTxtSeat">
+            <LinearLayout
+                android:id="@+id/maleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="15dp"
+                android:padding="15dp"
+                android:background="@drawable/button_bg">
+
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/bg_seat"
+                    android:backgroundTint="#1904A4"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male     "
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="12sp"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/white"/>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/femaleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/button_bg">
+
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/bg_seat"
+                    android:backgroundTint="#FF8DEC"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="12sp"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/white"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+

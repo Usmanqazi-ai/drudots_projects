@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="200dp"
+    android:paddingHorizontal="30dp"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_close"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/dilBackBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Back"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/mainColor"
+        />
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="1dp"/>
+    <TextView
+        android:id="@+id/dilCloseTicktBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Close this ticket"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_medium"
+
+        />
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="1dp"/>
+    <TextView
+        android:id="@+id/dilcancelBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Cancel"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_medium"
+
+        />
+</LinearLayout>
+</LinearLayout>

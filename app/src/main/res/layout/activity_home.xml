@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Activities.HomeActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="matrix"
+        android:background="@color/mainColor"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/map_img" />
+
+
+    <ImageView
+        android:id="@+id/appbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="10dp"
+       android:layout_centerHorizontal="true"
+        android:src="@drawable/appbar_logo" />
+
+    <FrameLayout
+        android:id="@+id/homeFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navLayout"
+        android:layout_below="@+id/appbar"
+        />
+
+
+  <LinearLayout
+        android:id="@+id/navLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/mainColor"
+      android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="55dp"
+          android:gravity="center"
+          android:paddingHorizontal="25dp"
+          android:background="@drawable/navigation_background">
+
+<LinearLayout
+    android:id="@+id/navHome"
+    android:layout_width="85dp"
+    android:layout_height="37dp"
+    android:gravity="center"
+    android:background="@drawable/bg_item_nav"
+    android:orientation="vertical">
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_home"/>
+
+      <TextView
+          android:id="@+id/titleNavHome"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Home"
+          android:textSize="8sp"
+          android:textColor="@color/white"
+          android:fontFamily="@font/montserrat_semibold"/>
+
+</LinearLayout>
+      <LinearLayout
+          android:id="@+id/navNotification"
+          android:layout_width="85dp"
+          android:layout_height="37dp"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:background="@drawable/bg_item_nav"
+          >
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/ic_notification"/>
+
+          <TextView
+              android:id="@+id/titleNavNotification"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Notification"
+              android:textSize="8sp"
+              android:textColor="@color/white"
+              android:fontFamily="@font/montserrat_semibold"/>
+
+      </LinearLayout>
+      <LinearLayout
+          android:id="@+id/navMore"
+          android:layout_width="85dp"
+          android:layout_height="37dp"
+          android:orientation="vertical"
+          android:gravity="center"
+          android:background="@drawable/bg_item_nav"
+          >
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/ic_more"/>
+
+          <TextView
+              android:id="@+id/titleNavMore"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="More"
+              android:textSize="8sp"
+              android:textColor="@color/white"
+              android:fontFamily="@font/montserrat_semibold"/>
+
+      </LinearLayout>
+
+      </LinearLayout>
+
+
+
+  </LinearLayout>
+
+
+
+</RelativeLayout>

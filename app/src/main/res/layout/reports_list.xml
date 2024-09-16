@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_help_list"
+    android:layout_margin="5dp"
+    android:elevation="2dp"
+    android:paddingBottom="15dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complaint Status:"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_medium"/>
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Active"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/mainColor"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_medium"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complaint No:"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_medium"/>
+        <TextView
+            android:id="@+id/txtComplnNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#885"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/mainColor"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_medium"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date &amp; Time:"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_medium"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11-5-2023 11:15:56"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/mainColor"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_medium"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complaint Title:"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_medium"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Difficulty tickets &amp; dates"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/mainColor"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_medium"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I encountered significant challenges when attempting to find tickets for specific dates. This issue caused frustration and hindered my ability to secure ticketsfor the intended event."
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="left"
+        android:textSize="11sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <TextView
+        android:id="@+id/txtClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click to view details"
+        android:textSize="12sp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FF0000"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_gravity="right"
+        android:layout_marginEnd="15dp"/>
+
+</LinearLayout>

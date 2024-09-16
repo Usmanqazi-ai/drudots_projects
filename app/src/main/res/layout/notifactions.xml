@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:src="@drawable/bg_circle"
+        android:layout_gravity="end"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="12dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:background="@drawable/bg_circle"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:backgroundTint="#FFAFDA">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bus_logo_red"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/messageNotification"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="Your ticket has been successfully reserved and confirmed."
+        android:fontFamily="@font/montserrat_medium"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timeNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="07:40 AM"
+        android:textSize="10sp"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_gravity="end"
+        android:layout_marginEnd="12dp"/>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

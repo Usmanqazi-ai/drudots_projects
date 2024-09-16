@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ImageView
+        android:id="@+id/imgIconD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_d"
+        android:layout_alignBottom="@id/rlMessageSent"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentLeft="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rlMessageSent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgIconD"
+        >
+
+        <TextView
+            android:id="@+id/txtMsgSent"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:text="Hi thanks for your massage. We'll get back to your within 24 hours."
+            android:textSize="11sp"
+            android:textColor="@color/white"
+            android:paddingStart="15dp"
+            android:background="@drawable/bg_message_reply"
+            android:paddingVertical="10dp"
+            android:paddingEnd="30dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imgMsgSent"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:src="@drawable/bus_img_chat"
+        app:riv_corner_radius="20dp"
+        app:riv_border_width="2dp"
+        app:riv_mutate_background="true"
+        android:scaleType="centerCrop"
+        app:riv_border_color="@color/mainColor"
+        />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtMsgTimeSent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:25 ago"
+        android:textSize="10sp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_below="@id/rlMessageSent"
+        android:layout_alignLeft="@id/rlMessageSent"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.ProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlProfileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-3dp"
+        android:background="@drawable/bg_profile_picture"
+        android:gravity="center">
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/bg_profile"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_img"
+            android:layout_width="134dp"
+            android:layout_height="134dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profile_img" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@drawable/map_img" />
+
+
+        <ImageView
+            android:id="@+id/backButtonProfile"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_above="@id/profile_img"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/bg_back_button"
+            android:padding="5dp"
+            android:src="@drawable/path_back_white" />
+
+        <TextView
+            android:id="@+id/txtChangePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/profile_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Edit Your Profile"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+
+            />
+
+        <TextView
+            android:id="@+id/txtBlank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/profile_img"
+            android:layout_marginBottom="-20dp"
+
+
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Full Name"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:elevation="8dp"
+            app:boxStrokeColor="#15000000"
+            app:boxStrokeWidthFocused="1dp"
+            app:cursorColor="#B3000000"
+            app:hintEnabled="false"
+            app:startIconDrawable="@drawable/person">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hint="Your Name"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="12sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Phone Number"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/num_field_bg">
+
+            <com.hbb20.CountryCodePicker
+
+                android:id="@+id/countryCode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                app:ccp_defaultNameCode="pk"
+                app:ccp_showArrow="false"
+                app:ccp_showNameCode="false"
+                app:ccp_textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/pakFlag"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/getFlag"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="🇵🇰" />
+
+                <TextView
+                    android:id="@+id/getCountryCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="+92"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:background="#26000000" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/profilePhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="XXX XXXX XX"
+                android:inputType="phone"
+                android:textSize="12sp"
+                app:cursorColor="#B3000000" />
+
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/profileUpdateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Update Now"
+            android:textAppearance="@style/ShapeAppearance.Material3.Corner.Small"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/profileImgPic"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@id/rlProfileImage"
+        android:layout_alignRight="@id/rlProfileImage"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/bg_circle_white"
+        android:backgroundTint="@color/mainColor"
+        android:padding="5dp"
+        android:src="@drawable/ic_camera" />
+
+</RelativeLayout>

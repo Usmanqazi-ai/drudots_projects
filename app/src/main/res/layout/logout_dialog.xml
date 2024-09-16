@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/bg_dialog">
+
+
+    <TextView
+        android:id="@+id/txtLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="12sp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you want to logout?"
+        android:textSize="10sp"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_below="@+id/txtLogOut"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="25dp"/>
+
+    <TextView
+        android:id="@+id/txtOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:textColor="#00B843"
+        android:layout_below="@id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="5dp"
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:fontFamily="@font/montserrat_medium"/>
+    <TextView
+        android:id="@+id/txtCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColor="#00B843"
+        android:layout_below="@id/textView2"
+        android:layout_toLeftOf="@id/txtOk"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:fontFamily="@font/montserrat_medium"/>
+
+    </RelativeLayout>
+</RelativeLayout>
